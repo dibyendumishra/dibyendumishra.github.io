@@ -1,0 +1,91 @@
+---
+layout: compress
+---
+
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+	{% assign link = '/' %}
+	{% assign post = site.logos.fly %}
+	{% assign postsub = site.logos.wood %}
+	{% assign postbut = site.logos.wood %}
+	{% assign home = site.logos.fly %}
+	{% assign homesub = site.logos.spike %}
+	{% assign homebut = site.logos.spike %}
+	{% assign lost = site.logos.rock %}
+	{% assign lostsub = site.logos.drip %}
+	{% assign lostbut = site.logos.drip %}
+
+	{% if page.title == site.title %}
+		{% assign this = home %}
+		{% assign that = lost %}
+		{% assign sub = homesub %}
+		{% assign but = homebut %}
+		{% assign link = 'about' %}
+	{% else %}
+		{% if page.title == 'about' %}
+			{% assign this = lost %}
+			{% assign sub = lostsub %}
+			{% assign but = lostbut %}
+			{% assign that = home %}
+		{% else %}
+			{% assign this = post %}
+			{% assign sub = postsub %}
+			{% assign but = postbut %}
+			{% assign that = home %}
+		{% endif %}
+	{% endif %}
+	
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body>
+
+		{% include header.html %}
+
+		<main>
+			{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+		</main>
+
+		{% if page.path contains '_posts' %}
+
+			{% if content contains 'reversefootnote' %}
+				<aside class="note"></aside>
+				<script async src="{{site.baseurl}}/assets/footnotes.js"></script>
+			{% endif %}
+
+		{% endif %}
+
+	</body>
+	<script>
+		var that = '{{ that }}';
+		var thiS = '{{ this }}';
+		var sub = '{{ sub }}';
+		var but = '{{ but }}';
+		function postLogo() {
+			document.getElementById("logo").src = '{{ post }}';
+		}
+		function thatLogo() {
+			document.getElementById("logo").src = that;
+		}
+		function thisLogo() {
+			document.getElementById("logo").src = thiS;
+		}
+		function subLogo() {
+			document.getElementById("logo").src = sub;
+		}
+		function buttonLogo() {
+			document.getElementById("logo").src = but;
+		}
+		function postClicked() {
+			thiS = '{{ post }}';
+		}
+		function clicked() {
+			thiS = that;
+		}
+	</script>
+</html>
