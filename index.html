@@ -11,9 +11,7 @@ sub: grab a coffee, finish the book, build something
 		{% if post.visible != false %}
 		
 		<li>
-			<div class="post-date">
-				<time>{{ post.date | date: "%B %-d, %Y" }}</time>
-			</div>
+			
 			<div class="title">
 				<a href="{{ post.url | prepend: site.baseurl }}"
 				onmouseover = "postLogo()"
