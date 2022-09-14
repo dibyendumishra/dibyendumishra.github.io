@@ -21,7 +21,7 @@ I am currently a **Data Scientist** with the **[Ministry of Rural Development (G
 
 In the past, I've worked at **[Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/)** under [Prof. Joyojeet Pal](http://joyojeet.people.si.umich.edu/) on projects around **political polarisation, crisis informatics, and disinformation** on social media using computational methods. The focus of these projects revolved mostly around the political self of the understudied non-political class of actors, broadly categorized as influencers, who yield immense influence due to their following and reach on these platforms. The work has been shared through publications (at CSCW, COMPASS, ICWSM, SMSociety, HICCS, etc), media articles, and blog posts.
 
-### *Please write to dibyendumishra96@gmail.com if you would like to say hello!*
+#### *Please write to dibyendumishra96@gmail.com if you would like to say hello!*
 
 
 
