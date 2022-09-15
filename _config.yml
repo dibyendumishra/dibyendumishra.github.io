@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Dibyendu Mishra's Portfolio # the website title (if blank, full name will be used instead)
 first_name: Dibyendu
 middle_name: 
 last_name: Mishra
@@ -14,7 +14,7 @@ footer_text: >
 keywords: dibyendu-mishra, dibyendu, portfolio, jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: /assets/img/icons8-dobby.svg  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🐚  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://dibyendumishra.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -46,7 +46,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -68,7 +68,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: dibyendumishra # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: DibyenduMishra # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: dibyendu-mishra # your LinkedIn user name
 scholar_userid: fFz-3KIAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
