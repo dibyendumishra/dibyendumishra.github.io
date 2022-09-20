@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a **researcher and practitioner** who is interested in studying power structures in society and using data science and interpretive methods for helping make them more equitable. In the academic context, I am braodly interested in the areas of ICTD and HCI.
+I am a **researcher and practitioner** who is interested in studying power structures in society and using data science and interpretive methods for helping make them more equitable and inclusive. In the academic context, I am broadly interested in the areas of ICTD and HCI.
 
 At **present**, I am a Data Scientist with the **[Ministry of Rural Development (Govt. of India)](https://rural.nic.in/en)** which caters to the most underserved populations living in rurual India(estimated at 833M as per Census 2011). My work focuses on studying, designing, and building meaningful *in-situ* algorithmic systems using participatory methods towards improving service delivery of the ministry's schemes. More tangibly I identify bias in allocation of resources, exclusion of populations living at the margins and anomalous behaviors in service delivery, and build decision aid sytems for administrators towards alleviating these for fairer and inclusive outcomes. A large part of my work also involves thinking about the political economy in which such technology operates and making them more explainable, which I am always excited to talk about!
 
