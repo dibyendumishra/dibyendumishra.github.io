@@ -29,7 +29,7 @@
         {%- else %}
           <!-- Title -->
           {%- if entry.honors -%}
-            <div class="title"><a href={{entry.url}}>{{entry.title}}</a> [<i>{{entry.honors}}</i>]</div>
+            <div class="title"><a href={{entry.url}}>{{entry.title}}</a> [{{entry.honors}}]</div>
           {%- else -%}
             <div class="title"><a href={{entry.url}}>{{entry.title}}</a></div>
           {%- endif -%}
