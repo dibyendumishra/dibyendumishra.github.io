@@ -6,7 +6,7 @@ subtitle: #This site is still under development
 
 profile:
   align: right
-  image: prof_pic.jpeg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: 
 
@@ -15,13 +15,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a **data scientist and researcher** working broadly in the area of Information & Communication Technologies and Development(ICTD) and Human Computer Interaction(HCI). I motivated by issues of social justice and have focused my inquiries on public sector algorithms and social networks.
+Hi! I am a PhD Student in the *[School of Computing and Information Science](https://cis.cornell.edu/)* at *[Cornell University](https://www.cornell.edu/)* where I research socio-technical systems and their governance. My current interests include researching i) organisational and social dynamics of realising 'Responsible AI' principles in practice and ii) public accountability of algorithmic systems. I am motivated by issues of social justice and have focused my inquiries on public sector algorithms and social media.
 
-At present, I am a Data Scientist with the **[Ministry of Rural Development (Govt. of India)](https://rural.nic.in/en)** where I study and design in-situ algorithmic systems using participatory methods to improve service delivery for underserved populations living in rural India. Specifically, I identify bias in resource allocation, exclusion of marginalized populations, and anomalous behavior in service delivery, and build decision aid systems for administrators for fairer and inclusive outcomes. A large part of my work also involves thinking about the political economy in which such technology operates and making them more explainable, which I am always excited to talk about!
+In the past, I was a Data Scientist at the *[Ministry of Rural Development (Govt. of India)](https://rural.nic.in/en)* where I studied and designed in-situ algorithmic systems by interfacing with administrators and beneficiaries alike, to improve service delivery of government welfare programs. Prior to that, I worked with *[Prof. Joyojeet Pal](http://joyojeet.people.si.umich.edu/)* at *[Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/)* on political polarisation, crisis informatics, and disinformation on social media. 
 
-My previous work at **[Microsoft Research India](https://www.microsoft.com/en-us/research/lab/microsoft-research-india/)** with **[Prof. Joyojeet Pal](http://joyojeet.people.si.umich.edu/)** focused on political polarisation, crisis informatics, and disinformation on social media using computational methods. The work has been shared through publications (at CSCW, COMPASS, ICWSM, SMSociety, HICCS, etc), media articles, and blog posts.
-
-*Please write to [first-name][last-name]96[at]gmail[dot]com if you would like to say hello!*
+*Reach out to dm926[at]cornell[dot]edu if any of this resonates with you! My socials and email are always open for under-supported interantional students looking to apply to PhD programs :) It's an overwhelming process, so please don't hesitate to seek help.*
 
 
 
