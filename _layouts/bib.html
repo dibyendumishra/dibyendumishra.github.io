@@ -132,9 +132,7 @@
           <!-- {%- if entry.url %}
             <a href={{entry.url}} class="btn btn-sm z-depth-0" role="button">URL</a>
           {%- endif %} -->
-          {%- if entry.honors %}
-            <a class="abstract btn btn-sm z-depth-0" role="button">entry.honors</a>
-          {%- endif %}
+          
           {%- if entry.abstract %}
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
@@ -185,7 +183,9 @@
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
           </div>
-
+          {%- if entry.honors %}
+          <div class="award"><p>{{entry.honors}</p></div>
+        {%- endif %}
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
