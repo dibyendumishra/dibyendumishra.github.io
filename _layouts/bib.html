@@ -28,11 +28,9 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          {%- if entry.honors -%}
-            <div class="title"><a href={{entry.url}}>{{entry.title}}</a> [{{entry.honors}}]</div>
-          {%- else -%}
-            <div class="title"><a href={{entry.url}}>{{entry.title}}</a></div>
-          {%- endif -%}
+
+          <div class="title"><a href={{entry.url}}>{{entry.title}}</a></div>
+
           <!-- Author -->
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
@@ -134,6 +132,9 @@
           <!-- {%- if entry.url %}
             <a href={{entry.url}} class="btn btn-sm z-depth-0" role="button">URL</a>
           {%- endif %} -->
+          {%- if entry.honors %}
+            <a class="abstract btn btn-sm z-depth-0" role="button">entry.honors</a>
+          {%- endif %}
           {%- if entry.abstract %}
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
