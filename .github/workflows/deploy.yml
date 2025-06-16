@@ -22,11 +22,16 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0.2'
-        bundler-cache: true
+        bundler-cache: false  # disable cache for now to avoid URI conflicts
 
-    - name: Install dependencies
-      run: |
-        npm install -g mermaid.cli
+    - name: Upgrade bundler (fix for Ruby 3 default gem conflicts)
+      run: gem install bundler -v 2.4.22
+
+    - name: Install gems
+      run: bundle install
+
+    - name: Install mermaid-cli
+      run: npm install -g mermaid.cli
 
     - name: Setup deploy options
       id: setup
