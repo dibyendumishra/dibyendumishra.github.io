@@ -6,6 +6,6 @@ title: blog posts
 nav: true
 nav_order: 2
 ---
-<div class="publications" id="blog_posts_id">  
+<div class="projects">  
     {%- include blog_posts.html %}
 </div>
