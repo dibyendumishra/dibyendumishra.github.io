@@ -6,5 +6,4 @@ title: blog posts
 nav: true
 nav_order: 2
 ---
-
 {%- include blog_posts.html %}
