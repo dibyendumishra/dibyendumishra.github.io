@@ -6,7 +6,6 @@ title: blog posts
 nav: true
 nav_order: 2
 ---
-<div class="publications" id="blog_posts_id">
-    <h2>Blog Posts</h2>    
-    {% bibliography -f blog_posts -q @*[selected=true]* %}
+<div class="publications" id="blog_posts_id">  
+    {%- include blog_posts.html %}
 </div>
