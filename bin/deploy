@@ -8,48 +8,37 @@ DEPLOY_BRANCH="gh-pages"
 NO_PUSH=""
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH] [--verbose] [--no-push]"
 
-# Argument parsing
-while [[ $# -gt 0 ]]; do
-  case "$1" in
-    -h|--help)
-      echo "$USAGE_MSG"
-      exit 0
-      ;;
-    -u|--user)
-      SRC_BRANCH="source"
-      DEPLOY_BRANCH="master"
-      shift
-      ;;
-    -s|--src)
-      if [[ -z "$2" || "$2" =~ ^- ]]; then
-        echo "Error: --src requires a non-empty argument."
+while [[ $# > 0 ]]; do
+    key="$1"
+
+    case $key in
+        -h|--help)
+        echo $USAGE_MSG
+        exit 0
+        ;;
+        -u|--user)
+        ;;
+        -s|--src)
+        SRC_BRANCH="$2"
+        shift
+        ;;
+        -d|--deploy)
+        DEPLOY_BRANCH="$2"
+        shift
+        ;;
+        --verbose)
+        set -x
+        ;;
+        --no-push)
+        NO_PUSH="--no-push"
+        ;;
+        *)
+        echo "Option $1 is unknown." >&2
+        echo $USAGE_MSG >&2
         exit 1
-      fi
-      SRC_BRANCH="$2"
-      shift 2
-      ;;
-    -d|--deploy)
-      if [[ -z "$2" || "$2" =~ ^- ]]; then
-        echo "Error: --deploy requires a non-empty argument."
-        exit 1
-      fi
-      DEPLOY_BRANCH="$2"
-      shift 2
-      ;;
-    --verbose)
-      set -x
-      shift
-      ;;
-    --no-push)
-      NO_PUSH="--no-push"
-      shift
-      ;;
-    *)
-      echo "Unknown option: $1"
-      echo "$USAGE_MSG"
-      exit 1
-      ;;
-  esac
+        ;;
+    esac
+    shift
 done
 
 echo "Deploying..."
@@ -97,7 +86,10 @@ git checkout -b "$DEPLOY_BRANCH"
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
-# Deploy
+# Purge unused css
+purgecss -c purgecss.config.js
+
+# Delete and move files
 find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
 mv _site/* .
 rm -rf _site/
