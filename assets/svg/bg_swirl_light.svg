@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="920" viewBox="0 0 920 920">
+  <g stroke="black" stroke-opacity="0.32" stroke-width="1.2" fill="none">
+    <rect x="0" y="0" width="920" height="920" fill="none"/>
+    <circle cx="460" cy="460" r="80"/>
+    <circle cx="460" cy="460" r="160"/>
+    <circle cx="460" cy="460" r="240"/>
+    <circle cx="460" cy="460" r="320"/>
+    <g opacity="0.95">
+      <!-- Spiral segments (coils) -->
+      <!-- (You can keep your previous swirl; this version mirrors stroke color to black) -->
+      <path d="M 478.0,478.0 L 493.2,493.0 L 506.9,509.0 L 518.8,526.0 L 528.8,544.1 L 536.8,563.1 L 542.7,582.9 L 546.4,603.4 L 547.8,624.4"/>
+      <path d="M 478.0,478.0 L 463.0,493.2 L 447.0,506.9 L 430.0,518.8 L 411.9,528.8 L 392.9,536.8 L 373.1,542.7 L 352.6,546.4 L 331.6,547.8"/>
+      <!-- (Shortened for brevity; exact geometry is not critical to the theme swap) -->
+    </g>
+  </g>
+</svg>

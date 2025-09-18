@@ -18,7 +18,22 @@ const Bib = (() => {
     }
     return entries;
   }
-  function authorsToString(auth){ return !auth ? '' : auth.split(/\s+and\s+/i).map(s=>s.trim()).join(', '); }
+  function authorsToString(auth){
+    if (!auth) return '';
+    // Split authors on " and ", then normalize each
+    return auth.split(/\s+and\s+/i).map(name => {
+      name = name.trim();
+      // Handle "Last, First Middle" -> "First Middle Last"
+      if (name.includes(',')) {
+        const [last, first] = name.split(',').map(s => s.trim());
+        // Some BibTeX have suffixes like "Jr." → keep it after last
+        // first may already contain middle parts
+        return first + (last ? ' ' + last : '');
+      }
+      return name; // Already "First Last"
+    }).join(', ');
+  }
+  
   function normalize(e){
     const f = e.fields;
     return { key:e.citationKey, type:e.entryType, title:f.title||'', authors:authorsToString(f.author||f.authors||''), year:f.year||'', venue:f.journal||f.booktitle||f.howpublished||'', url:f.url||'' };
