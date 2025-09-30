@@ -1,4 +1,21 @@
 ---
+layout: page
+permalink: /blog/
+title: blog posts
+description: A collection of some of academic blog posts
+nav: true
+nav_order: 3
+---
+
+<!-- _pages/blog.md.md -->
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>
+
+<!-- ---
 layout: default
 permalink: /blog/
 title: blog
@@ -193,4 +210,4 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
-</div>
+</div> -->
