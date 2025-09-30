@@ -2,20 +2,16 @@
 layout: page
 permalink: /blog/
 title: blog posts
-description: A collection of some of academic blog posts
-nav: true
-nav_order: 3
+description: A collection of my academic blog posts. Some of these have been extensively covered in the press.
+nav: false
+nav_order: 4
 ---
 
 <!-- _pages/blog.md.md -->
 
-<div class="publications">
 
-{% bibliography %}
 
-</div>
-
-<!-- ---
+---
 layout: default
 permalink: /blog/
 title: blog
@@ -210,4 +206,4 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
-</div> -->
+</div>

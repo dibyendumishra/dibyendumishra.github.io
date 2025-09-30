@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: left
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 
@@ -27,4 +27,4 @@ I am a PhD Student in the Department of [Computing and Information Science](http
 
 In the past, I used to work for a government agency in India building decision support systems and conducting risk and fairness analysis for rural infrastructures and livelihoods programs. Prior to that, I was researcher engrossed in the world of political social media, exploring disinformation campaigns and influencer networks. You can find more about these in the publications section and my CV! 
 
-[Download CV](../assets/pdf/Dibyendu_Mishra_CV_Sep2025.pdf) \| **Email:** at dm926 [at] cornell [dot] edu
+[Download CV](../assets/pdf/Dibyendu_Mishra_CV_Sep2025.pdf) \| **Email:** dm926 [at] cornell [dot] edu
