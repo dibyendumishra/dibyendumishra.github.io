@@ -236,7 +236,7 @@
         {% assign items = entry.blog | split: "|" %}
         {% for item in items %}
           {% assign parts = item | split: "::" %}
-          <a href="{{ parts[1] | strip }}" class="btn btn-sm z-depth-0" role="button">
+          <a href="{{ parts[1] | strip }}" class="blog btn btn-sm z-depth-0" role="button">
             {{ parts[0] | strip }}
           </a>
         {% endfor %}
