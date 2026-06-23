@@ -49,11 +49,11 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">
-    {% if entry.url %}
-      <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
-    {% else %}
-      {{ entry.title }}
-    {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
     </div>
     <!-- Author -->
     <div class="author">
@@ -166,15 +166,19 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-   {% comment %} {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %} {% endcomment %}
+    {% comment %}
+      {% if entry.month %}
+        {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+      {% endif %}
+    {% endcomment %}
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
-  {% comment %}  {% if entry.location %}
-      {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
-    {% endif -%}  {% endcomment %}
+    {% comment %}
+      {% if entry.location %}
+        {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
+      {% endif -%}
+    {% endcomment %}
     {% if entry.additional_info %}
       {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
     {% endif %}
@@ -193,7 +197,6 @@
 
     <!-- Links/Buttons -->
     <div class="links">
-
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
@@ -233,9 +236,9 @@
         <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
       {% endif %}
       {% if entry.blog %}
-        {% assign items = entry.blog | split: "|" %}
+        {% assign items = entry.blog | split: '|' %}
         {% for item in items %}
-          {% assign parts = item | split: "::" %}
+          {% assign parts = item | split: '::' %}
           <a href="{{ parts[1] | strip }}" class="blog btn btn-sm z-depth-0" role="button">
             {{ parts[0] | strip }}
           </a>
@@ -262,10 +265,9 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
       {% if entry.award %}
-     
-       <a class="award btn btn-sm z-depth-0" role="button">
-          {{entry.award}}
-         {% comment %}  {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}{% endcomment %}
+        <a class="award btn btn-sm z-depth-0" role="button">
+          {{ entry.award }}
+          {% comment %}  {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}{% endcomment %}
         </a>
       {% endif %}
     </div>
